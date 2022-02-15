@@ -46,10 +46,11 @@ $partite= [
 
 
 for ($i = 0; $i < count($partite); $i++) {
-    echo $partite[$i]['team_casa']. ' - ';
-    echo $partite[$i]['team_ospiti']. ' / ';
-    echo $partite[$i]['punti_casa']. ' - ';
-    echo $partite[$i]['punti_ospiti']. '<br><br>'; 
+   $casa = $partite[$i]['team_casa'];
+   $ospiti = $partite[$i]['team_ospiti'];
+   $puntiCasa = $partite[$i]['punti_casa'];
+   $puntiOspiti = $partite[$i]['punti_ospiti'];
+    echo "$casa - $ospiti | $puntiCasa - $puntiOspiti <br><br>"; 
 }
 
 
